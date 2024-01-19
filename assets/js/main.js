@@ -3,6 +3,7 @@ const team = [
         name: 'Wane Barnett',
         role: 'Founder & CEO',
         photo: './assets/img/wayne-barnett-founder-ceo.jpg',
+        
     },
     {
         name: 'Angela Caroll',
@@ -30,4 +31,10 @@ const team = [
         photo: './assets/img/walter-gordon-office-manager.jpg',
     },
 ]
+
+//ciclo che mostra l'intero oggetto in console e nel DOM stampato momentaneamente nel body
+for(name in team){
+    console.log(team[name]);
+    document.body.innerHTML += `${team[name].name}, ${team[name].role}, ${team[name].photo}<br>`
+}
 
